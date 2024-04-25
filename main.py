@@ -31,7 +31,7 @@ def __list_all_voices():
   
 
 @app.route('/ogg')
-def uploaded_file(filename):
+def list_files():
   try:
     all_voices = sorted(__list_all_voices())
     return(all_voices)
